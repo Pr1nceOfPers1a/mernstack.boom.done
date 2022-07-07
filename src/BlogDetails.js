@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const BlogDetails = () => {
     const { id } =useParams()
     console.log(`blog yo mama hahha get it?, ${id}`);
-    const { data: blog, error, isPending } = useFetch('http://localhost:4000/blogs/' + id)
-    console.log('fetch for blogs:id', useFetch('http://localhost:4000/blogs/' + id))
+    const { data: blog, error, isPending } = useFetch('https://mern-stack-finissimo.herokuapp.com/blogs/' + id)
+    console.log('fetch for blogs:id', useFetch('https://mern-stack-finissimo.herokuapp.com/blogs/' + id))
     console.log('data:blog', blog)
     const navigate = useNavigate();
 
     const handleDelete= () => {
-        fetch('http://localhost:4000/blogs/' + blog.blog._id, {
+        fetch('https://mern-stack-finissimo.herokuapp.com/blogs/' + blog.blog._id, {
             method: 'DELETE'
         }).then(()=> {
             navigate ('/');

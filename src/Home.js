@@ -5,7 +5,7 @@ import useFetch from './useFetch.js';
 
 const Home = () => {
     //useFetch('http://...) becomes "url" parameter in useFetch.js
-     const { data: blogs, isPending, error } = useFetch('http://localhost:4000/blogs');
+     const { data: blogs, isPending, error } = useFetch('https://mern-stack-finissimo.herokuapp.com/blogs');
 
     return(
         <div className="home">

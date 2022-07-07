@@ -15,7 +15,7 @@ const Create = () => {
 
         setIsPending(true);
         // below makes a post request to localhost endpoint to add in a new blog which will add in a new blog and json server adds an id property for us
-        fetch('http://localhost:4000/blogs',{
+        fetch('https://mern-stack-finissimo.herokuapp.com/blogs',{
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog )
