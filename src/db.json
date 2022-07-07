@@ -1,0 +1,23 @@
+{
+  "blogs": [
+    {
+      "title": "party",
+      "body": "Party details",
+      "author": "Caleb",
+      "id": 1
+    },
+    {
+      "title": "Welcome Home Friends of Donner",
+      "body": "The Donner Party, sometimes called the Donner–Reed Party, was a group of American pioneers who migrated to California in a wagon train from the Midwest. Delayed by a multitude of mishaps, they spent the winter of 1846–1847 snowbound in the Sierra Nevada mountain range. Some of the migrants resorted to cannibalism to survive, eating the bodies of those who had succumbed to starvation, sickness, and extreme cold.t",
+      "author": "a dead man",
+      "id": 2
+    },
+    {
+      "title": "Milk Man",
+      "body": "They eventually go on to begin the day's training. Master Roshi takes the two boys to collect several bottles of milk from the milkman in the village nearby. They have to deliver milk to everyone on the island, before breakfast. After a grueling morning run and zig zapping between a long stretch of trees (which Krillin tries to cheat his way through) they eventually make it to a house, though it happened to be up a severely long flight of stairs, exhausting both Goku and Krillin on their journey to the top.",
+      "author": "master roshi",
+      "id": 3
+    }
+  ]
+}
+

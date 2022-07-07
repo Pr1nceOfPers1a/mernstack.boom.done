@@ -1,13 +1,113 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat";
+  color: #e30000;
+  background-color: #ffee00;
+  -webkit-text-stroke: 1px black
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e30000;
+}
+.navbar h1 {
+  color: #e30000;
+}
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #e30000;
+  border-top: 1px solid #e30000;
+  border-left: 1px solid #e30000;
+  border-right: 1px solid #e30000;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.2)
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #e30000;
+  margin-bottom: 8px;
+}
+.navbar .links { 
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #e30000;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+.blog-details h2 {
+  font-size: 35px;
+  color: #e30000;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 1.5px #000000;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details button {
+  background: #e30000;
+  color: #00000093;
+  border: 0px #000000;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #e30000;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #e30000;
+  color: #000000;
+  border: 1px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create button:hover {
+  box-shadow: 1px 3px 5.5px rgba(0,0,0,0.45)
 }
