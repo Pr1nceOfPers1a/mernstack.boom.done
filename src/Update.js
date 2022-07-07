@@ -6,12 +6,14 @@ const Update = () => {
     const { id } =useParams()
     console.log(id);
     const { data: blog, error, isPending } = useFetch('https://mern-stack-finissimo.herokuapp.com/blogs/' + id);
+    console.log(error);
     const [title, setTitle] = useState (blog ? blog.title:'');
     const [body, setBody] = useState (blog ? blog.body:'');
     const [author, setAuthor] = useState (blog ? blog.author:'');
     //below false because nothing is pending until we submit the form!
     const [isSubmitting, setIsSubmitting] = useState(false);
     const history = useNavigate();
+    console.log(isSubmitting);
 
     useEffect(() => {
         if(blog !== null){
